@@ -3,226 +3,306 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>태아보험 비교 노트</title>
-<meta name="description" content="태아보험 가입 시기, 특약 구성, 만기, 가입 채널을 한눈에 비교하는 정리 페이지">
+<title>태아보험 고르기</title>
+<meta name="description" content="태아보험, 어떤 조건으로 어디서 가입할지 3분 안에 정하는 페이지. 22주 마감, 추천 기본 설정, 견적 요청 템플릿, 비교표">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <div class="wrap">
 <header>
   <a class="back" href="../">← 전체 목차</a>
-  <h1>👶 태아보험 비교 노트</h1>
-  <p>가입 전에 같이 보려고 정리한 페이지예요. 2026년 11월 기준 공개 자료를 바탕으로 했어요.</p>
+  <h1>👶 태아보험 고르기</h1>
+  <p>어느 보험사, 어떤 조건으로 가입할지 정하는 페이지예요. 2026-11-22 기준.</p>
   <nav>
-    <a href="#timing">가입 시기</a>
-    <a href="#structure">특약 구성</a>
-    <a href="#term">만기·납입</a>
-    <a href="#channel">다이렉트 vs 설계사</a>
-    <a href="#compare">보험사별 비교</a>
-    <a href="#checklist">체크리스트</a>
+    <a href="#decide">정할 것 4가지</a>
+    <a href="#riders">특약 고르기</a>
+    <a href="#insurers">보험사 비교</a>
+    <a href="#quote">견적 요청</a>
+    <a href="#traps">함정 주의</a>
   </nav>
 </header>
 
-<div class="notice">
-  <b>읽기 전에</b> 이 페이지는 공개된 안내 글을 요약한 참고용이에요. 보험료와 보장 금액은 보험사, 상품, 엄마 나이, 임신 주수에 따라 달라서, 출처가 분명하지 않은 숫자는 <span class="tag check">확인 필요</span>로 표시했어요. 실제 가입 전에는 반드시 각 보험사의 상품설명서와 약관, 가입설계서로 확인해 주세요.
-</div>
-
-<section id="timing">
-  <h2>1. 언제 가입해야 할까</h2>
-  <p>핵심은 <b>태아에게만 붙는 특약(선천이상, 저체중아, 주산기질환, 산모 특약 등)은 보통 임신 22주 전후에 마감</b>된다는 점이에요. 본계약(아이의 질병·상해 보장)은 그 이후에도 가입할 수 있는 경우가 많아요. <span class="muted">[KB Think, 뱅크샐러드]</span></p>
-  <ul class="timeline">
-    <li><b>~12주</b>1차 기형아 검사(NIPT 등) 전. 검사 결과가 나오기 전이라 심사에 유리해서 이때 준비를 권장해요. <span class="muted">[KB Think, 뱅크샐러드]</span></li>
-    <li><b>15~17주</b>2차 기형아 검사 시기. 이상 소견이 나오면 가입이 제한되거나 부담보가 붙을 수 있어요. <span class="tag check">상품별 확인 필요</span></li>
-    <li><b>20주 전후</b>정밀 초음파. 이 결과도 고지 대상이 될 수 있어요.</li>
-    <li><b>22주 무렵</b>태아 특약 대부분 마감. <span class="tag must">중요</span> 22주 이후에도 일부 태아 특약을 받아주는 상품이 있다는 보도가 있지만, 구체적인 상품과 조건은 <span class="tag check">확인 필요</span></li>
-    <li><b>출생 후</b>어린이보험(본계약)으로는 계속 가입 가능. 다만 출생 후 진단받은 질환은 고지 대상이 돼요.</li>
-  </ul>
-  <p class="muted">참고: 태아 상태에서 생긴 질병 자체를 그때 보장하는 것이 아니라, 보장은 출생 후부터 시작돼요. [쿠키뉴스]</p>
+<!-- 1. 결론 -->
+<section class="bottom-line" id="top">
+  <h2>결론부터</h2>
+  <ol class="steps">
+    <li><b>마감: 임신 22주</b> 전에 가입 완료. 태아특약은 대부분 22주(6일)까지만 받아요.<sup>[A][B]</sup></li>
+    <li><b>가능하면 1차 기형아 검사(11~14주) 전</b>에 신청. 이상 소견이 나오면 심사가 까다로워져요.<sup>[A]</sup></li>
+    <li><b>이번 주:</b> 아래 <a href="#quote">템플릿</a>으로 손보사 3곳에 같은 조건 견적 요청.</li>
+    <li><b>견적 오면:</b> <a href="#compare-sheet">비교표</a>에 적고, 보험료보다 <b>담보 금액·갱신형 여부</b>부터 맞춰 보기.</li>
+    <li><b>청약할 때:</b> 엄마 병력(이전 제왕절개 포함)은 빠짐없이 알리기.<sup>[E]</sup></li>
+  </ol>
+  <p class="note">이 페이지는 가입 권유가 아니에요. <span class="tag check">확인 필요</span>는 출처가 약한 내용이에요.</p>
 </section>
 
-<section id="structure">
-  <h2>2. 무엇을 넣을까 (특약 구성)</h2>
-  <div class="grid">
-    <div class="box">
-      <h3>🍼 태아 특약 <span class="tag must">22주 전 마감</span></h3>
-      <ul>
-        <li>선천이상 수술비·입원비</li>
-        <li>저체중아(미숙아) 입원일당, 인큐베이터 치료</li>
-        <li>신생아 질병 입원일당 (NICU 대비)</li>
-        <li>주산기질환 관련 보장</li>
-        <li>뇌성마비 진단비, 출생 시 장해</li>
+<!-- 2. 정할 것 4가지 -->
+<section id="decide">
+  <h2>내가 정할 것 4가지</h2>
+  <p class="lead">각 항목의 <b>추천</b>은 공개 자료를 바탕으로 한 이 페이지의 의견이에요. 형편에 맞게 바꿔도 돼요.</p>
+  <div class="decide">
+    <div class="dcard">
+      <div class="dq"><span class="num">1</span>만기: 30세 vs 100세</div>
+      <div class="pick">추천 <b>30세 만기</b> + 계약전환제도 있는 상품</div>
+      <ul class="why">
+        <li>30세 만기가 보험료가 낮아요.<sup>[A][B]</sup></li>
+        <li>전환제도가 있으면 나중에 90·100세로 늘릴 수 있어요.<sup>[A]</sup></li>
+        <li>여유가 있으면 100세도 같이 견적 받아 차이를 보세요.</li>
       </ul>
-      <p class="muted">보장 금액 예시로 "선천이상 수술비 2,000~3,000만 원", "저체중아 입원일당 50만 원/일 이상" 같은 숫자가 돌지만 출처가 명시돼 있지 않아요. <span class="tag check">확인 필요</span></p>
+      <p class="def">계약전환제도: 만기 전에 신청하면 기존 계약을 이어 보장 기간을 늘리는 제도. 고지 생략 여부는 <span class="tag check">상품별 확인 필요</span></p>
     </div>
-    <div class="box">
-      <h3>🧒 본계약 (아이 평생 보장의 뼈대)</h3>
-      <ul>
-        <li>질병·상해 입원일당, 수술비(종수술비)</li>
-        <li>암 진단비 (소아암 포함 여부)</li>
-        <li>뇌혈관질환·허혈성 심장질환 진단비</li>
-        <li>상해·질병 후유장해</li>
-        <li>실손의료비: 2026년 기준 5세대 실손 <span class="tag check">가입 조건 확인 필요</span></li>
+    <div class="dcard">
+      <div class="dq"><span class="num">2</span>납입·갱신 방식</div>
+      <div class="pick">추천 <b>비갱신형 · 순수보장형 · 20년납</b></div>
+      <ul class="why">
+        <li>갱신형은 나이·위험이 바뀌면 보험료가 올라요.<sup>[G]</sup></li>
+        <li>만기환급형은 보험료가 더 비싸요.<sup>[B]</sup></li>
+        <li><b>무해지형 vs 표준형</b>은 둘 다 견적 받아 비교.</li>
       </ul>
-      <p class="muted">감기·독감·수족구처럼 소액 담보는 보험료 대비 효율이 낮다는 의견이 많아요. [뱅크샐러드]</p>
+      <p class="def">무해지형: 보험료가 싼 대신, 납입 중 해지하면 돌려받는 돈이 없고 약관대출도 안 돼요.<sup>[F]</sup> 20년납은 예시이고, 납입기간별 차이는 <span class="tag check">설계서로 확인 필요</span></p>
     </div>
-    <div class="box">
-      <h3>🤰 산모 특약</h3>
-      <ul>
-        <li>임신중독증, 임신성 당뇨</li>
-        <li>유산, 조산 관련 수술비</li>
-        <li>제왕절개, 출산 합병증</li>
+    <div class="dcard">
+      <div class="dq"><span class="num">3</span>특약 구성</div>
+      <div class="pick">추천 <b>태아특약 + 큰 병 진단비 + 실손</b>, 소액 담보는 빼기</div>
+      <ul class="why">
+        <li>태아특약은 22주가 지나면 다시 넣을 수 없어요.<sup>[A][B]</sup></li>
+        <li>감기·수족구 같은 소액 담보는 보험료 대비 효율이 낮다는 평가가 많아요.<sup>[B]</sup></li>
       </ul>
-      <p class="muted">상품마다 있는지, 심사 조건이 무엇인지가 크게 달라요. <span class="tag check">확인 필요</span></p>
+      <p class="def">자세한 목록은 <a href="#riders">특약 고르기</a>에 있어요.</p>
     </div>
-    <div class="box">
-      <h3>💡 같이 알아두면 좋은 것</h3>
-      <ul>
-        <li>국민행복카드로 임신·출산 진료비 지원 (단태아 100만 원, 다태아 140만 원 이상) [KB Think, 보건복지부 인용] <span class="tag check">최신 금액 확인 필요</span></li>
-        <li>5세대 실손은 분만예정일 기준 일정 기간 전에 가입하면 임신·출산 급여 의료비를 보장한다는 안내가 있어요. [KB Think] <span class="tag check">약관 확인 필요</span></li>
-        <li>실손은 태아보험을 대체하지 않아요. 진단비·입원일당 같은 정액 보장은 따로예요.</li>
+    <div class="dcard">
+      <div class="dq"><span class="num">4</span>가입 채널</div>
+      <div class="pick">추천 <b>여러 보험사 견적 3곳</b> + 같은 설계의 다이렉트 가격 확인</div>
+      <ul class="why">
+        <li>같은 상품이면 채널이 달라도 보장은 같아요.<sup>[C]</sup></li>
+        <li>다이렉트가 더 싼 경우가 있어요. <span class="tag check">상품별 확인 필요</span></li>
+        <li>검사 이상 소견, 쌍둥이, 엄마 병력이 있으면 설계사 상담이 편해요.<sup>[C]</sup></li>
       </ul>
+      <p class="def">사은품은 법으로 한도가 있어요: 첫해 보험료의 10%와 3만 원 중 적은 금액.<sup>[H]</sup> 사은품으로 보험사를 고르지 마세요.</p>
     </div>
   </div>
 </section>
 
-<section id="term">
-  <h2>3. 만기와 납입 기간</h2>
-  <div class="tbl"><table>
-    <thead><tr><th></th><th>30세 만기</th><th>100세 만기</th></tr></thead>
-    <tbody>
-      <tr><th>월 보험료</th><td><span class="tag good">낮음</span></td><td>높음</td></tr>
-      <tr><th>보장 기간</th><td>성인이 될 때까지. 이후 다시 준비해야 함</td><td>평생</td></tr>
-      <tr><th>총 납입액</th><td>상대적으로 적음</td><td>커짐</td></tr>
-      <tr><th>장점</th><td>지금 부담이 적고, 성인 후 그때 상황에 맞게 다시 설계</td><td>나중에 병력이 생겨도 보장 유지</td></tr>
-      <tr><th>주의</th><td>만기 때 병력 고지 없이 연장(전환)되는지 <span class="tag check">상품별 확인 필요</span></td><td>오랜 기간 물가상승으로 보장금액의 실질 가치가 줄어듦</td></tr>
-    </tbody>
-  </table></div>
-  <h3>함께 정할 것</h3>
-  <ul>
-    <li><b>납입 기간(20년납, 30년납 등)</b>: 짧을수록 월 보험료는 높고 총액은 줄어드는 구조가 일반적이에요. 정확한 차이는 설계서로 비교해야 해요. <span class="tag check">확인 필요</span></li>
-    <li><b>순수보장형 vs 만기환급형</b>: 환급형은 보험료가 더 비싸요. 차이가 30~40%라는 글이 있지만 근거가 없어요. <span class="tag check">확인 필요</span></li>
-    <li><b>갱신형 vs 비갱신형</b>: 갱신형은 처음에 싸도 갱신 때 보험료가 오를 수 있어요.</li>
+<!-- 3. 특약 -->
+<section id="riders">
+  <h2>이 특약만 챙기면 돼요</h2>
+  <p class="lead">권장 보장 금액은 공식·중립 출처에서 찾지 못했어요. 금액은 3곳 모두 <b>같게 맞추는 것</b>이 더 중요해요.</p>
+
+  <h3 class="grp must-h">✅ 꼭 넣기</h3>
+  <ul class="rlist">
+    <li><span class="rn">선천이상 수술비·입원비</span><span class="tag must">22주 마감</span></li>
+    <li><span class="rn">저체중아(미숙아) 입원일당</span><span class="tag must">22주 마감</span></li>
+    <li><span class="rn">신생아 질병 입원일당 <small>신생아 중환자실(NICU) 대비</small></span><span class="tag must">22주 마감</span></li>
+    <li><span class="rn">주산기질환 <small>출산 전후에 생기는 아기 질환</small></span><span class="tag must">22주 마감</span></li>
+    <li><span class="rn">뇌성마비 진단비 · 출생 시 장해</span><span class="tag must">22주 마감</span></li>
+    <li><span class="rn">암(소아암) · 뇌혈관 · 심장질환 진단비</span><span class="tag good">본계약</span></li>
+    <li><span class="rn">질병·상해 수술비, 입원일당, 후유장해</span><span class="tag good">본계약</span></li>
+    <li><span class="rn">아이 실손의료비 <small>병원비 실제 쓴 만큼 보장</small></span><span class="tag good">본계약</span></li>
   </ul>
+  <p class="src">근거: KB Think[A], 뱅크샐러드[B]. 특약 이름은 보험사마다 달라요.</p>
+
+  <h3 class="grp mid-h">🔸 있으면 좋음 (조건 보고 결정)</h3>
+  <ul class="rlist">
+    <li><span class="rn">산모특약 <small>임신중독증, 유산·조산 수술, 제왕절개 등</small></span><span class="tag check">상품별 차이 큼</span></li>
+    <li><span class="rn">입원일당의 보장 일수·병실 기준 <small>예: 1~180일 vs 1~30일</small></span><span class="tag good">비교 포인트</span></li>
+  </ul>
+  <p class="src">산모특약은 22주 전 마감 특약이에요.[A] 엄마 병력 고지 문제와 엮이니 <a href="#traps">함정 1번</a>도 보세요.</p>
+
+  <h3 class="grp skip-h">✖️ 빼거나 줄이기</h3>
+  <ul class="rlist">
+    <li><span class="rn">감기·독감·수족구·아토피 소액 담보</span><span class="tag skip">효율 낮음</span></li>
+    <li><span class="rn">5대 골절, 교통상해 후유장해 같은 세분화 특약</span><span class="tag skip">기본과 중복</span></li>
+    <li><span class="rn">만기환급형 · 갱신형 담보</span><span class="tag skip">보험료↑</span></li>
+  </ul>
+  <p class="src">근거: 뱅크샐러드[B]. ADHD·언어장애 등 청구 이력은 나중에 다른 보험 가입 때 고지 대상이 될 수 있어요.[B]</p>
 </section>
 
-<section id="channel">
-  <h2>4. 다이렉트 vs 설계사</h2>
-  <div class="grid">
-    <div class="box">
-      <h3>💻 다이렉트 (온라인)</h3>
-      <ul>
-        <li>보험료가 더 저렴한 경우가 있다고 해요. <span class="tag check">상품별 확인 필요</span></li>
-        <li>특약 구성과 약관 확인을 직접 해야 해요.</li>
-        <li>건강 상태가 단순하고, 원하는 구성이 명확할 때 적합</li>
-      </ul>
+<!-- 4. 보험사 비교 -->
+<section id="insurers">
+  <h2>보험사 비교</h2>
+  <p class="lead">보험사별 정확한 마감 주수를 공개한 공식 자료는 못 찾았어요. 아래 표로 <b>3곳을 고르고</b>, 마감 주수는 견적 받을 때 꼭 물어보세요.</p>
+
+  <div class="ins">
+    <div class="icard">
+      <div class="ihead"><b>현대해상</b><span class="tag good">언론 보도</span></div>
+      <div class="iprod">굿앤굿어린이종합보험Q</div>
+      <dl>
+        <dt>만기</dt><dd>10·20·30세 또는 80·90·100세, 30세 만기 후 전환 제도<sup>[1][2]</sup></dd>
+        <dt>특징</dt><dd>임신중독증 등 산모 보장 언급, 누적 약 559만 건(2025-03)<sup>[1]</sup></dd>
+      </dl>
     </div>
-    <div class="box">
-      <h3>🧑‍💼 설계사</h3>
-      <ul>
-        <li>여러 보험사 설계서를 한 번에 받아 비교하기 편해요.</li>
-        <li>검사 결과에 이상 소견이 있거나, 쌍둥이, 엄마 병력이 있을 때 도움이 돼요.</li>
-        <li>사은품은 법으로 한도가 정해져 있어요 (첫해 보험료의 10%와 3만 원 중 적은 금액이라는 안내). <span class="tag check">보험업법 원문 확인 필요</span></li>
-      </ul>
+    <div class="icard">
+      <div class="ihead"><b>메리츠화재</b><span class="tag good">언론 보도</span></div>
+      <div class="iprod">내맘(Mom)같은 어린이보험</div>
+      <dl>
+        <dt>만기</dt><dd>100세 만기 선택 가능<sup>[2]</sup>, 그 외 <span class="tag check">확인 필요</span></dd>
+        <dt>특징</dt><dd>암·심장·뇌혈관 진단비를 첫해부터 감액 없이 지급한다고 보도<sup>[2]</sup></dd>
+      </dl>
+    </div>
+    <div class="icard">
+      <div class="ihead"><b>삼성화재</b><span class="tag good">보도 + 상품요약서</span></div>
+      <div class="iprod">마이 슈퍼스타</div>
+      <dl>
+        <dt>만기</dt><dd>80·90·100세 중 선택, 태아~15세 가입<sup>[2]</sup></dd>
+        <dt>특징</dt><dd>무해지형·50% 해지환급형 선택<sup>[G]</sup>, 분할지급형 담보, 발달검사 지원비<sup>[2]</sup></dd>
+      </dl>
+    </div>
+    <div class="icard">
+      <div class="ihead"><b>KB손해보험</b><span class="tag good">언론 보도</span></div>
+      <div class="iprod">금쪽같은 자녀보험</div>
+      <dl>
+        <dt>만기</dt><dd><span class="tag check">확인 필요</span></dd>
+        <dt>특징</dt><dd>성조숙증, 성장호르몬 결핍, 언어·행동 발달장애 보장 강조<sup>[2][3]</sup></dd>
+      </dl>
+    </div>
+    <div class="icard">
+      <div class="ihead"><b>DB손해보험</b><span class="tag check">정보 부족</span></div>
+      <div class="iprod">아이러브플러스건강보험</div>
+      <dl>
+        <dt>만기</dt><dd><span class="tag check">확인 필요</span></dd>
+        <dt>특징</dt><dd>보도에 세부 내용 없음<sup>[2]</sup></dd>
+      </dl>
+    </div>
+    <div class="icard">
+      <div class="ihead"><b>교보생명</b><span class="tag good">언론 보도</span></div>
+      <div class="iprod">교보우리아이보험 <small>(생명보험사)</small></div>
+      <dl>
+        <dt>만기</dt><dd>최대 100세<sup>[3]</sup></dd>
+        <dt>특징</dt><dd>태아특약: 저체중·조기출생 입원, 신생아 뇌출혈·기흉, 선천성 대사이상<sup>[3]</sup></dd>
+      </dl>
     </div>
   </div>
-  <p class="muted">같은 상품이라면 채널이 달라도 보장 내용은 같다고 해요. [뱅크샐러드]</p>
+  <div class="mini">
+    <p><b>모든 보험사 공통</b> · 태아특약 마감: 대부분 <b>22주(6일) 이내</b>, 생명보험사는 가입 시작 주수가 늦을 수 있어요.<sup>[B]</sup> 보험사별 기준은 <span class="tag check">확인 필요</span></p>
+    <p><b>쌍둥이(다태아)</b> · 가입은 가능하지만 보험사마다 받아주는 기준이 달라요. 일찍 여러 곳에 물어보세요.<sup>[B]</sup></p>
+    <p><b>그 외</b> · 한화손보(건강쑥쑥), 하나손보(하나더스타트, 2026-10 출시), 삼성생명, 동양생명도 상품이 있지만 태아특약 정보가 부족해요.<sup>[3][4]</sup></p>
+  </div>
+  <details class="fold">
+    <summary>보험료는 얼마쯤? (검증 안 된 참고값)</summary>
+    <p>조건을 밝히고 공개된 보험사 공식 보험료 예시는 찾지 못했어요. 블로그의 "임신 6주 남아" 예시만 있어요.<sup>[5]</sup> <span class="tag check">확인 필요</span></p>
+    <div class="tbl"><table class="plain">
+      <thead><tr><th>조건</th><th>출생 전</th><th>출생 후</th></tr></thead>
+      <tbody>
+        <tr><td>30세 만기·전기납</td><td>약 7.8만 원</td><td>약 5.7만 원</td></tr>
+        <tr><td>100세 만기·20년납·무해지</td><td>약 6.7만 원</td><td>약 11.5만 원</td></tr>
+      </tbody>
+    </table></div>
+    <p class="src">보험사·특약 구성 미공개. 규모 감만 잡는 용도예요.</p>
+  </details>
 </section>
 
+<!-- 5. 견적 요청 -->
+<section id="quote">
+  <h2>견적 받을 때 이렇게 요청하세요</h2>
+  <p class="lead">3곳에 <b>똑같은 문장</b>을 보내야 비교가 돼요. 복사해서 ○ 부분만 채우세요.</p>
+  <div class="copybox">
+<pre id="tpl">태아보험 가입설계서 요청드립니다.
+- 임신 ○주, 단태아/쌍둥이, 출산예정 ○월
+- 엄마 나이 ○세, 산과 병력: 없음 / 있음(○○)
+- 만기: 30세 만기와 100세 만기 각각 (30세 만기는 계약전환 조건도 알려주세요)
+- 납입: 20년납, 비갱신형, 순수보장형
+- 해지환급: 무해지형과 표준형 각각
+- 태아특약: 선천이상 수술·입원, 저체중아 입원일당, 신생아 질병 입원일당(NICU), 주산기질환, 뇌성마비·출생 시 장해
+- 본계약: 암(소아암)·뇌혈관·심장 진단비, 질병·상해 수술비, 입원일당, 후유장해, 실손
+- 산모특약은 따로 표시해 주세요
+- 감기·수족구 등 소액 담보, 갱신형 담보는 빼 주세요
+- 출생 전/후 월 보험료, 총 납입액, 담보별 금액이 나온 설계서로 부탁드립니다.</pre>
+    <button type="button" id="copyBtn" class="btn">문장 복사하기</button>
+  </div>
 
-
-<section id="compare">
-  <h2>5. 보험사별 비교</h2>
-  <p>태아보험은 대부분 손해보험사에서 팔고, 생명보험사 상품도 일부 있어요. 아래는 2025~2026년 언론 보도로 확인한 상품명과 특징이에요. 보험사가 직접 공개한 상품설명서로 대조한 것은 아니니, 상담 받을 때 이 표를 들고 "이 내용이 맞는지" 물어보는 용도로 써 주세요.</p>
-
-  <h3>손해보험사</h3>
-  <div class="tbl wide"><table>
-    <thead><tr><th>보험사</th><th>대표 상품</th><th>만기 선택</th><th>보도된 특징</th><th>점유율<br><small>(보유계약)</small></th></tr></thead>
-    <tbody>
-      <tr><th>현대해상</th><td data-label="대표 상품">굿앤굿어린이종합보험Q</td>
-        <td data-label="만기 선택">10·20·30세, 또는 80·90·100세. 30세 만기 후 80·90·100세로 전환하는 제도 있음 <sup>[1][2]</sup></td>
-        <td data-label="보도된 특징">2004년 출시, 누적 약 559만 건(2025년 3월)<sup>[1]</sup>. 임신중독증·태반조기분리 등 산모 보장 언급<sup>[1]</sup>. 다발성 소아암, 중증 화상, 학교폭력 피해 등<sup>[3]</sup></td>
-        <td data-label="점유율  (보유계약)">32.4% <span class="tag check">확인 필요</span><sup>[6]</sup></td></tr>
-      <tr><th>DB손해보험</th><td data-label="대표 상품">아이러브플러스건강보험<sup>[2]</sup></td>
-        <td data-label="만기 선택"><span class="tag check">확인 필요</span></td>
-        <td data-label="보도된 특징">보도에 세부 내용 없음. 다이렉트(앱) 가입 채널 있음</td>
-        <td data-label="점유율  (보유계약)">18.7% <span class="tag check">확인 필요</span><sup>[6]</sup></td></tr>
-      <tr><th>메리츠화재</th><td data-label="대표 상품">내맘(Mom)같은 어린이보험<sup>[2]</sup></td>
-        <td data-label="만기 선택">100세 만기 선택 가능<sup>[2]</sup></td>
-        <td data-label="보도된 특징">암·심장·뇌혈관 진단비를 첫해부터 감액 없이 지급한다고 보도<sup>[2]</sup></td>
-        <td data-label="점유율  (보유계약)">14.1% <span class="tag check">확인 필요</span><sup>[6]</sup></td></tr>
-      <tr><th>KB손해보험</th><td data-label="대표 상품">금쪽같은 자녀보험<sup>[2][3]</sup></td>
-        <td data-label="만기 선택"><span class="tag check">확인 필요</span></td>
-        <td data-label="보도된 특징">성조숙증, 성장호르몬 결핍증, 언어·행동 발달장애 보장 강조<sup>[2][3]</sup></td>
-        <td data-label="점유율  (보유계약)">12.1% <span class="tag check">확인 필요</span><sup>[6]</sup></td></tr>
-      <tr><th>삼성화재</th><td data-label="대표 상품">New 마이 슈퍼스타<sup>[2]</sup></td>
-        <td data-label="만기 선택">80·90·100세 중 선택, 태아~15세 가입<sup>[2]</sup></td>
-        <td data-label="보도된 특징">분할지급형 담보, 영유아 발달검사 지원비<sup>[2]</sup>. 5~15세용 '마이스타 0515'는 별도 상품(태아 가입 아님)<sup>[3]</sup></td>
-        <td data-label="점유율  (보유계약)">10.5% <span class="tag check">확인 필요</span><sup>[6]</sup></td></tr>
-      <tr><th>한화손해보험</th><td data-label="대표 상품">건강쑥쑥 어린이보험<sup>[3]</sup></td>
-        <td data-label="만기 선택"><span class="tag check">확인 필요</span></td>
-        <td data-label="보도된 특징">열성경련, 크룹, 알레르기 자반증, 수족구 등 영유아 생활질환 보장 강조<sup>[3]</sup>. 태아 특약 여부 <span class="tag check">확인 필요</span></td>
-        <td data-label="점유율  (보유계약)">-</td></tr>
-      <tr><th>하나손해보험</th><td data-label="대표 상품">하나더스타트 어린이보험 (2026년 10월 출시)<sup>[4]</sup></td>
-        <td data-label="만기 선택"><span class="tag check">확인 필요</span></td>
-        <td data-label="보도된 특징">독감 항바이러스제 치료비, 폐렴·패혈증 진단비 등 호흡기 보장<sup>[4]</sup>. 태아 특약 여부 <span class="tag check">확인 필요</span></td>
-        <td data-label="점유율  (보유계약)">-</td></tr>
-      <tr><th>롯데·흥국·NH농협 등</th><td colspan="4">조사한 보도에서 태아·어린이보험 상품 정보를 찾지 못했어요. <span class="tag check">확인 필요</span></td></tr>
-    </tbody>
-  </table></div>
-
-  <h3>생명보험사</h3>
-  <div class="tbl wide"><table>
-    <thead><tr><th>보험사</th><th>상품</th><th>보도된 특징</th></tr></thead>
-    <tbody>
-      <tr><th>교보생명</th><td data-label="상품">교보우리아이보험<sup>[3]</sup></td><td data-label="보도된 특징">태아부터 가입, 최대 100세. 태아 특약으로 저체중·조기출생 입원, 신생아 뇌출혈·기흉, 특정 선천성 대사이상 보장</td></tr>
-      <tr><th>삼성생명</th><td data-label="상품">우리아이 올바른 성장보험<sup>[3]</sup></td><td data-label="보도된 특징">출생 전 태아·임산부 특약, 출생 후 학교폭력·말더듬증 등 특약</td></tr>
-      <tr><th>동양생명</th><td data-label="상품">우리WON하는쑥쑥어린이보장보험<sup>[3]</sup></td><td data-label="보도된 특징">가입 20년 후 보장금액이 최대 200%까지 늘어나는 체증형</td></tr>
-    </tbody>
-  </table></div>
-
-  <h3>보험료는 얼마일까</h3>
-  <p>보험사가 조건(성별, 만기, 납입기간, 특약 구성)을 밝히고 공개한 보험료 예시는 찾지 못했어요. 그래서 보험사끼리 보험료를 나란히 비교하는 것은 아직 불가능해요. <span class="tag check">확인 필요</span></p>
-  <p class="muted">참고로, 한 육아 정보 블로그가 "임신 6주 남아" 기준으로 보험사를 밝히지 않은 설계 예시를 올렸어요. 30세 만기·전기납은 출생 전 월 약 7.8만 원·출생 후 약 5.7만 원, 100세 만기·20년납(무해지)은 출생 전 약 6.7만 원·출생 후 약 11.5만 원이었어요. 검증되지 않은 수치라서 규모 감을 잡는 정도로만 봐 주세요.<sup>[5]</sup></p>
-  <p><b>가장 확실한 방법:</b> 같은 조건(예: 30세 만기, 20년납, 비갱신, 동일 특약)으로 3곳 이상에서 가입설계서를 받아 이 표에 넣어 비교하는 거예요. 금융감독원·보험협회의 <a href="https://www.e-insmarket.or.kr">보험다모아</a>에서도 일부 상품의 보험료를 비교할 수 있어요.</p>
-
-  <p class="src">
-    [1] 한국경제, 2025-05-15 · [2] 이코노미스트, 2025-01-20 · [3] 데일리안, 2026-05-03 · [4] IB토마토, 2026-10-02 · [5] 빌리지베이비 블로그(2026-10 수정, 미검증) · [6] 폭스씨지 블로그가 이투데이 2026-07-28 보도를 인용한 2026년 4월말 수치(원문 미확인). 링크는 페이지 맨 아래에 있어요.
-  </p>
-</section>
-
-<section id="checklist">
-  <h2>6. 가입 전 체크리스트</h2>
+  <h3>상담할 때 꼭 물어볼 것</h3>
   <ul class="checklist">
-    <li><label><input type="checkbox">지금 임신 몇 주인지, 22주까지 남은 기간 확인</label></li>
-    <li><label><input type="checkbox">손보사 2~3곳 이상에서 같은 조건으로 설계서 받기</label></li>
-    <li><label><input type="checkbox">30세 만기 vs 100세 만기 결정</label></li>
-    <li><label><input type="checkbox">비갱신형인지, 순수보장형인지 확인</label></li>
-    <li><label><input type="checkbox">선천이상·저체중아·NICU 관련 특약 포함 여부</label></li>
-    <li><label><input type="checkbox">산모 특약 포함 여부와 심사 조건</label></li>
-    <li><label><input type="checkbox">실손 포함 여부와 조건</label></li>
-    <li><label><input type="checkbox">검사 결과·엄마 병력 고지 항목 정확히 알리기</label></li>
-    <li><label><input type="checkbox">출생 후 보험료가 얼마로 바뀌는지 확인</label></li>
-    <li><label><input type="checkbox">면책기간·감액기간 확인</label></li>
+    <li><label><input type="checkbox" data-k="q1">이 상품 태아특약 마감은 정확히 몇 주 며칠인가요?</label></li>
+    <li><label><input type="checkbox" data-k="q2">태아 가입인데 감액기간·면책기간이 있는 담보가 있나요?</label></li>
+    <li><label><input type="checkbox" data-k="q3">설계에 갱신형 담보가 섞여 있나요?</label></li>
+    <li><label><input type="checkbox" data-k="q4">출생 후 보험료는 얼마로 바뀌나요?</label></li>
+    <li><label><input type="checkbox" data-k="q5">30세 만기 전환은 고지 없이 되나요? 언제 신청하나요?</label></li>
+    <li><label><input type="checkbox" data-k="q6">산모특약 심사 때 무엇을 알려야 하나요?</label></li>
+    <li><label><input type="checkbox" data-k="q7">실손은 출생 직후부터 보장되나요?</label></li>
   </ul>
-  <p class="muted">체크 표시는 저장되지 않아요. 새로고침하면 초기화돼요.</p>
+  <p class="src">감액: 금감원은 2016년부터 태아 가입 계약에는 가입 초기 감액 없이 전액 지급하도록 약관을 고치게 했어요.[D] 지금 상품도 그런지 확인하세요.</p>
+
+  <h3 id="compare-sheet">견적 비교표</h3>
+  <p class="lead">칸을 눌러 바로 적을 수 있어요. 이 기기 브라우저에만 저장돼요.</p>
+  <div class="qwrap"><table class="qtable">
+    <thead><tr><th>항목</th><th>A사</th><th>B사</th><th>C사</th></tr></thead>
+    <tbody id="qbody"></tbody>
+  </table></div>
+  <button type="button" id="clearBtn" class="btn ghost">비교표 지우기</button>
+</section>
+
+<!-- 6. 함정 -->
+<section id="traps">
+  <h2>함정 주의</h2>
+  <ol class="traps">
+    <li><b>엄마 병력 숨기면 아이 보장까지 날아갈 수 있어요.</b> 이전 제왕절개를 안 알려 계약 전체가 해지된 분쟁 사례가 있어요.<sup>[E]</sup></li>
+    <li><b>22주 넘기면 태아특약 끝.</b> 검사 결과가 나쁘면 그 전이라도 제한될 수 있어요.<sup>[A][B]</sup></li>
+    <li><b>무해지형은 중간 해지하면 0원.</b> 오래 유지할 자신이 있을 때만 고르세요.<sup>[F]</sup></li>
+    <li><b>첫 보험료만 보지 마세요.</b> 갱신형 담보, 출생 후 보험료, 총 납입액을 같이 보세요.<sup>[G]</sup></li>
+    <li><b>사은품·소액 담보로 고르지 마세요.</b> 사은품은 최대 3만 원 수준이에요.<sup>[H]</sup></li>
+  </ol>
+  <p class="src">마음이 바뀌면: 증권 받은 날부터 15일, 청약한 날부터 30일 중 빠른 날까지 청약 철회가 가능해요(금융소비자보호법 제46조).<sup>[I]</sup></p>
 </section>
 
 <footer>
-  <h3>출처</h3>
-  <ul>
-    <li><a href="https://kbthink.com/insurance-guide/prenatal.html">KB Think, 태아보험 언제 가입해야 좋을까? (2026-05)</a></li>
-    <li><a href="https://www.banksalad.com/articles/태아보험-필요한가-비교표-가입시기-필수-특약">뱅크샐러드, 태아보험 가입시기·필수 특약·보험사 비교 방법 2026 총정리 (2026-10)</a></li>
-    <li><a href="https://www.banksalad.com/articles/보험-태아보험-태아보험다이렉트-설계사-차이">뱅크샐러드, 태아보험 다이렉트, 설계사보다 유리할까? (2026-11)</a></li>
-    <li><a href="https://v.daum.net/v/01DKJFjJoM">쿠키뉴스, 태아보험 시장 양극화…손보 '확대'·생보 '정체' (2026-04)</a></li>
-    <li>[1] <a href="https://www.hankyung.com/article/2025051538941">한국경제, 현대해상 굿앤굿어린이종합보험Q 관련 (2025-05-15)</a></li>
-    <li>[2] <a href="https://economist.co.kr/article/view/ecn202501160031">이코노미스트, 어린이보험 시장 관련 (2025-01-20)</a></li>
-    <li>[3] <a href="https://www.dailian.co.kr/news/view/1640058/">데일리안, 가정의 달 어린이보험 다시 본다 (2026-05-03)</a></li>
-    <li>[4] <a href="https://ibtomato.com/View.aspx?no=19727&amp;type=1">IB토마토, 하나손보 3년 만에 어린이보험 재공략 (2026-10-02)</a></li>
-    <li>[5] <a href="https://villagebaby.kr/guide/태아보험-가입시기-필수특약/">빌리지베이비, 태아보험 가입시기·필수특약 (블로그, 미검증)</a></li>
-    <li>[6] <a href="https://foxcg.com/children-insurance-ranking-2026/">폭스씨지, 어린이보험 가입 순위 2026 (블로그, 이투데이 인용)</a></li>
+  <h3>출처와 신뢰도</h3>
+  <ul class="srcs">
+    <li><span class="tag good">뉴스·금감원 발표</span> [D] <a href="https://m.seoul.co.kr/news/2016/07/13/20160713500118">서울신문, 금감원 어린이보험 관행 개선 (2016-07-13)</a></li>
+    <li><span class="tag good">정부 발표</span> [F] <a href="https://www.fsc.go.kr/no010101/73932">금융위원회 보도자료, 무·저해지환급금 보험 소비자경보 (2019-10-23)</a></li>
+    <li><span class="tag good">법령 해설</span> [H] <a href="https://www.nepla.ai/wiki/금융-투자-외국환/은행-보험/보험업법상-특별이익-제공-금지-2w0ndrywy9j7">보험업법 제98조·시행령 제46조 해설 (변호사 위키, 원문은 국가법령정보센터)</a></li>
+    <li><span class="tag good">뉴스·법령 인용</span> [I] <a href="https://www.ibabynews.com/contents/guide-child-fetal-insurance">베이비뉴스, 금소법 제46조 청약철회 등 정리 (2026-11)</a></li>
+    <li><span class="tag good">뉴스</span> [E] <a href="https://www.sidae.com/article/2026091409281890011">머니S, 산모 병력에 태아보험 해지한 보험사…금감원 제동 (2026-09-14)</a> · <a href="https://www.smarttoday.co.kr/ko-kr/articles/111577">스마트투데이 (2026-09-14)</a></li>
+    <li><span class="tag good">뉴스</span> [1] <a href="https://www.hankyung.com/article/2025051538941">한국경제, 현대해상 굿앤굿어린이종합보험Q (2025-05-15)</a></li>
+    <li><span class="tag good">뉴스</span> [2] <a href="https://economist.co.kr/article/view/ecn202501160031">이코노미스트, 어린이보험 시장 (2025-01-20)</a></li>
+    <li><span class="tag good">뉴스</span> [3] <a href="https://www.dailian.co.kr/news/view/1640058/">데일리안, 가정의 달 어린이보험 다시 본다 (2026-05-03)</a></li>
+    <li><span class="tag good">뉴스</span> [4] <a href="https://ibtomato.com/View.aspx?no=19727&amp;type=1">IB토마토, 하나손보 어린이보험 재공략 (2026-10-02)</a></li>
+    <li><span class="tag good">뉴스</span> <a href="https://v.daum.net/v/01DKJFjJoM">쿠키뉴스, 태아보험 시장 양극화 (2026-04)</a></li>
+    <li><span class="tag good">보험사 자료</span> [G] <a href="https://www.samsungfire.com/download/product/P_P02_05_01_106_2210.pdf">삼성화재 마이 슈퍼스타 상품요약서 (PDF)</a></li>
+    <li><span class="tag mid">판매·비교 서비스</span> [A] <a href="https://kbthink.com/insurance/trend/prenatal-insurance.html">KB Think, 태아보험 언제 가입해야 좋을까? (2026-05-28)</a></li>
+    <li><span class="tag mid">판매·비교 서비스</span> [B] <a href="https://www.banksalad.com/articles/태아보험-필요한가-비교표-가입시기-필수-특약">뱅크샐러드, 태아보험 가입시기·필수 특약 2026 (2026-11-16 수정)</a></li>
+    <li><span class="tag mid">판매·비교 서비스</span> [C] <a href="https://www.banksalad.com/articles/보험-태아보험-태아보험다이렉트-설계사-차이">뱅크샐러드, 태아보험 다이렉트 vs 설계사 (2026-11)</a></li>
+    <li><span class="tag check">블로그·미검증</span> [5] <a href="https://villagebaby.kr/guide/태아보험-가입시기-필수특약/">빌리지베이비, 보험료 예시</a></li>
   </ul>
-  <p>KB Think, 뱅크샐러드, 빌리지베이비, 폭스씨지 글은 보험 판매·비교 서비스나 블로그가 만든 콘텐츠예요. 이 페이지는 보험 가입 권유가 아니며, 최종 판단은 상품설명서와 약관 기준으로 해 주세요.<br>마지막 업데이트: 2026-11-22</p>
+  <p>KB Think·뱅크샐러드는 보험을 파는 회사가 만든 글이에요. 최종 판단은 상품설명서·약관·가입설계서로 해 주세요. 이 페이지에는 개인정보가 없어요.<br>마지막 업데이트: 2026-11-22</p>
 </footer>
 </div>
+
+<script>
+(function(){
+  var rows=["보험사·상품명","만기 / 납입","무해지 / 표준","출생 전 월 보험료","출생 후 월 보험료","총 납입액","선천이상 수술비","저체중아 입원일당","신생아 입원일당","암 진단비","뇌혈관·심장 진단비","실손 포함?","산모특약?","갱신형 담보 있음?","마감 주수","메모"];
+  var KEY="fetal-quote-v1", data={};
+  function load(){try{data=JSON.parse(localStorage.getItem(KEY)||"{}")||{};}catch(e){data={};}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(data));}catch(e){}}
+  load();
+  var body=document.getElementById("qbody");
+  rows.forEach(function(r,i){
+    var tr=document.createElement("tr"), th=document.createElement("th");
+    th.textContent=r; tr.appendChild(th);
+    ["a","b","c"].forEach(function(c){
+      var td=document.createElement("td"), inp=document.createElement("input");
+      var k=i+c; inp.type="text"; inp.value=data[k]||""; inp.setAttribute("aria-label",r+" "+c.toUpperCase()+"사");
+      inp.addEventListener("input",function(){data[k]=inp.value;save();});
+      td.appendChild(inp); tr.appendChild(td);
+    });
+    body.appendChild(tr);
+  });
+  document.querySelectorAll(".checklist input[data-k]").forEach(function(cb){
+    var k="ck-"+cb.dataset.k; cb.checked=!!data[k];
+    cb.addEventListener("change",function(){data[k]=cb.checked;save();});
+  });
+  document.getElementById("clearBtn").addEventListener("click",function(){
+    if(!confirm("비교표와 체크 표시를 모두 지울까요?"))return;
+    data={};save();
+    body.querySelectorAll("input").forEach(function(i){i.value="";});
+    document.querySelectorAll(".checklist input").forEach(function(c){c.checked=false;});
+  });
+  var btn=document.getElementById("copyBtn");
+  btn.addEventListener("click",function(){
+    var t=document.getElementById("tpl").textContent;
+    function done(){btn.textContent="복사했어요 ✓";setTimeout(function(){btn.textContent="문장 복사하기";},1800);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,fallback);}else{fallback();}
+    function fallback(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done();}catch(e){}document.body.removeChild(ta);}
+  });
+})();
+</script>
 </body>
 </html>

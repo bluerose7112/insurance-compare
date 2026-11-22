@@ -68,3 +68,68 @@ td small{color:var(--muted)}
   .wide tbody th{font-size:1.02rem;color:var(--accent)}
   .wide td[data-label]::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--muted);font-weight:600}
 }
+
+/* ---- fetal decision page ---- */
+:root{--skip:#6b7280;--skip-soft:#eef0f3}
+@media (prefers-color-scheme: dark){:root{--skip:#b0b6c0;--skip-soft:#2a2d33}}
+.tag.skip{background:var(--skip-soft);color:var(--skip)}
+.tag.mid{background:var(--accent-soft);color:var(--accent)}
+sup{font-size:.68em;color:var(--muted);line-height:0}
+.lead{margin:0 0 12px;color:var(--muted);font-size:.93rem}
+.bottom-line{border:2px solid var(--accent);background:var(--card)}
+.steps{margin:0;padding-left:22px}
+.steps li{margin:6px 0}
+.bottom-line .note{margin:10px 0 0;font-size:.82rem;color:var(--muted)}
+.decide{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:640px){.decide{grid-template-columns:1fr 1fr}}
+.dcard{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--bg)}
+.dq{font-weight:700;display:flex;align-items:center;gap:8px}
+.num{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--card);font-size:.8rem;flex:none}
+.pick{margin:10px 0 6px;padding:8px 10px;border-radius:8px;background:var(--ok-soft);color:var(--text);font-size:.95rem}
+.pick b{color:var(--ok)}
+.why{margin:4px 0;font-size:.92rem}
+.def{margin:8px 0 0;font-size:.82rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.grp{margin:16px 0 6px}
+.rlist{list-style:none;padding:0;margin:0}
+.rlist li{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);margin:0}
+.rlist li:last-child{border-bottom:none}
+.rn{min-width:0}
+.rn small{display:block;color:var(--muted);font-size:.8rem}
+.rlist .tag{flex:none;margin-top:3px}
+.ins{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:640px){.ins{grid-template-columns:1fr 1fr}}
+.icard{border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.ihead{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:1.02rem}
+.iprod{color:var(--accent);font-size:.9rem;margin:2px 0 6px}
+.iprod small{color:var(--muted)}
+.icard dl{margin:0;display:grid;grid-template-columns:2.6em 1fr;gap:4px 8px;font-size:.88rem}
+.icard dt{color:var(--muted);font-weight:600}
+.icard dd{margin:0;min-width:0}
+.mini{margin-top:12px;font-size:.9rem;background:var(--bg);border-radius:10px;padding:10px 12px}
+.mini p{margin:4px 0}
+.fold{margin-top:12px;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.fold summary{cursor:pointer;font-weight:600;font-size:.93rem}
+.fold p{font-size:.9rem}
+table.plain{min-width:0}
+.copybox{border:1px solid var(--line);border-radius:12px;background:var(--bg);padding:12px}
+.copybox pre{margin:0 0 10px;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere;font-family:inherit;font-size:.88rem;line-height:1.6}
+.btn{appearance:none;border:none;background:var(--accent);color:var(--card);font:inherit;font-weight:700;font-size:.92rem;padding:10px 16px;border-radius:10px;cursor:pointer;width:100%}
+.btn.ghost{background:none;color:var(--muted);border:1px solid var(--line);font-weight:500;margin-top:10px;width:auto}
+.qwrap{width:100%}
+.qtable{min-width:0;table-layout:fixed;font-size:.82rem}
+.qtable th,.qtable td{padding:4px 3px;white-space:normal;vertical-align:middle}
+.qtable thead th:first-child,.qtable tbody th{width:31%}
+.qtable tbody th{font-weight:600;background:none;font-size:.8rem;line-height:1.35}
+.qtable thead th{text-align:center}
+.qtable input{width:100%;min-width:0;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--text);font:inherit;font-size:16px;padding:5px 4px}
+.traps{margin:0;padding-left:22px}
+.traps li{margin:8px 0;font-size:.95rem}
+.traps b{display:block}
+.srcs{list-style:none;padding:0}
+.srcs li{margin:6px 0}
+.srcs .tag{margin-right:4px}
+#quote .checklist{padding:0}
+#quote .checklist li{margin:6px 0}
+#quote .checklist label{display:flex;gap:8px;align-items:flex-start}
+#quote .checklist input{margin:6px 0 0;flex:none}
+table.plain td+td{white-space:nowrap}
